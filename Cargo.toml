@@ -1,0 +1,12 @@
+[package]
+name = "dial-ecology"
+version = "0.1.0"
+edition = "2024"
+description = "Ecological succession on the cultural dial: traditions compete like species for niche space, governed by Lotka-Volterra dynamics"
+license = "MIT"
+repository = "https://github.com/SuperInstance/dial-ecology"
+keywords = ["ecology", "lotka-volterra", "cultural-dynamics", "succession", "biodiversity"]
+categories = ["science", "simulation"]
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
