@@ -55,8 +55,8 @@ impl LotkaVolterra {
             .map(|i| {
                 let si = &self.species[i];
                 let mut competition_sum = 0.0;
-                for j in 0..n {
-                    competition_sum += self.competition_matrix[i][j] * populations[j];
+                for (j, &pop_j) in populations.iter().enumerate().take(n) {
+                    competition_sum += self.competition_matrix[i][j] * pop_j;
                 }
                 si.growth_rate * si.population * (1.0 - competition_sum / si.carrying_capacity)
             })
