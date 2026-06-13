@@ -2,13 +2,11 @@
 name = "dial-ecology"
 version = "0.1.0"
 edition = "2021"
-description = "Lotka-Volterra dynamics for musical tradition competition on cultural dials"
+description = "Ecological succession on the cultural dial: traditions compete like species for niche space, governed by Lotka-Volterra dynamics"
 license = "MIT"
 repository = "https://github.com/SuperInstance/dial-ecology"
-keywords = ["lotka-volterra", "ecology", "music", "competition", "biodiversity"]
+keywords = ["ecology", "lotka-volterra", "cultural-dynamics", "succession", "biodiversity"]
+categories = ["science", "simulation"]
 
 [dependencies]
 serde = { version = "1", features = ["derive"] }
-
-[dev-dependencies]
-serde_json = "1"
